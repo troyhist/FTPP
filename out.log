@@ -1,0 +1,62 @@
+[netinfo]
+iterations  = 5 [0...4]
+places      = 8
+PMs         = 4
+records     = 5
+
+[protocol]
+
+[iteration = 0]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+1,	1,	1,	1,	0,	0,	0,	0,	
+-,	-,	-,	-,	-,	-,	-,	-,	
+0,	0,	0,	0,	-,	-,	-,	-,	
+
+pm1, busy,	t1,	3,	0,	-> new t1
+pm2, busy,	t2,	4,	0,	-> new t2
+pm3, busy,	t3,	1,	0,	-> new t3
+pm4, busy,	t4,	2,	0,	-> new t4
+
+[iteration = 1]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+0,	0,	0,	0,	0,	0,	0,	0,	
+-,	-,	-,	-,	-,	-,	2,	-,	
+-,	-,	-,	-,	-,	-,	-,	-,	
+
+pm1, busy,	t1,	3,	1,	
+pm2, busy,	t2,	4,	1,	
+pm3, ok,	-,	-,	-,	-> fired t3
+pm4, busy,	t4,	2,	1,	
+
+[iteration = 2]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+0,	0,	0,	0,	0,	0,	2,	0,	
+-,	-,	-,	-,	-,	-,	-,	3,	
+-,	-,	-,	-,	-,	-,	-,	-,	
+
+pm1, busy,	t1,	3,	2,	
+pm2, busy,	t2,	4,	2,	
+pm3, ok,	-,	-,	-,	
+pm4, ok,	-,	-,	-,	-> fired t4
+
+[iteration = 3]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+0,	0,	0,	0,	0,	0,	2,	3,	
+-,	-,	-,	-,	1,	-,	-,	-,	
+-,	-,	-,	-,	-,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired t1
+pm2, busy,	t2,	4,	3,	
+pm3, ok,	-,	-,	-,	
+pm4, ok,	-,	-,	-,	
+
+[iteration = 4]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+0,	0,	0,	0,	1,	0,	2,	3,	
+-,	-,	-,	-,	-,	1,	-,	-,	
+-,	-,	-,	-,	-,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	
+pm2, ok,	-,	-,	-,	-> fired t2
+pm3, ok,	-,	-,	-,	
+pm4, ok,	-,	-,	-,	

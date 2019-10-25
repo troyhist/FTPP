@@ -1,0 +1,27 @@
+[loginfo]
+FTPP build #          = 48
+Survive probability   = 99.9999990 %
+PM's fault probab.    =  0.0100000 %
+Tau0 - normal mode    = 30 (iterations/cycle)
+Tau1 - distorted mode = 45 (iterations/cycle)
+
+[PM info]
+MAX num. of PMs       = 4
+MAX num. of fault PMs = 2 (according to given Survive probability)
+total mappings        = 2
+
+[mapping =1]
+PMs          = 2
+Procs        = 3
+mapping's ID = -299583600.2.15
+
+PM,pm1,0,0,0,Tst,A.T1,A.T2,A.T3,A.Tout,Tst,C.T1,C.T2,C.T3,C.Tout,
+PM,pm2,0,0,0,Tst,B.T1,B.T2,B.T3,B.Tout,
+
+[mapping =2]
+PMs          = 2
+Procs        = 3
+mapping's ID = -299583600.2.15
+
+PM,pm1,0,0,0,Tst,A.T1,A.T2,A.T3,A.Tout,Tst,C.T1,C.T2,C.T3,C.Tout,
+PM,pm2,0,0,0,Tst,B.T1,B.T2,B.T3,B.Tout,

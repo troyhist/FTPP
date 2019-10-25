@@ -1,0 +1,23 @@
+MPNT02d
+‘Ґвм Ё§ Є®­бЇҐЄв . Џа®ўҐаЄ  ­ е®¦¤Ґ­Ёп ЇҐаҐЄалў ойЁебп ¬ аЄЁа®ў®Є. (08-05-2002)
+0
+500
+1
+PLACE,p1,1,
+PLACE,p2,0,
+PLACE,p3,0,
+TRANSITION,t1,1,99,
+TRANSITION,t2,1,100,
+TRANSITION,t3,1,100,
+CONNECTION,0,1,p1,t1,
+CONNECTION,0,1,p1,t2,
+CONNECTION,0,1,p2,t3,
+CONNECTION,0,1,p3,t3,
+CONNECTION,0,1,t1,p1,
+CONNECTION,0,1,t1,p2,
+CONNECTION,0,1,t2,p2,
+CONNECTION,0,1,t2,p3,
+CONNECTION,0,1,t3,p3,
+PM,pm1,0,0,0,t1,
+PM,pm2,0,0,0,t2,
+PM,pm3,0,0,0,t3,

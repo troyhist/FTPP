@@ -1,0 +1,26 @@
+MPNT02d
+Процесс задержки - PW2 (1 вход, 1 выход) (19.05.2002)
+0
+50
+1
+; -----------------------------------------------------------------------------
+; Повестка дня: надо ли включать почтовый ящик в процесс ?
+; -----------------------------------------------------------------------------
+PLACE,Pst1,0,
+PLACE,Pmbx,0,
+PLACE,Pr,0,
+PLACE,Pc,0,
+TRANSITION,T1,1,100,
+TRANSITION,T2,1,70,
+TRANSITION,T3,1,100,
+TRANSITION,Tout,2,90,
+CONNECTION,0,1,Pmbx,Tout,
+CONNECTION,0,1,Pst1,T1,
+CONNECTION,0,1,T1,Pr,
+CONNECTION,0,1,Pr,T2,
+CONNECTION,0,1,T2,Pc,
+CONNECTION,0,1,Pc,T3,
+CONNECTION,0,1,Pr,Tout,
+CONNECTION,0,1,Tout,Pc,
+CONNECTION,0,1,T3,Pst1,
+; -----------------------------------------------------------------------------

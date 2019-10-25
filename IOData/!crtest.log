@@ -1,0 +1,150 @@
+[netinfo]
+places      = 8
+transitions = 4
+iterations  = 8
+records     = 16
+[protocol]
+
+[iteration = 0]
+[processes]
+t1,	t2,	t3,	t4,	
+0,	0,	0,	0,	
+0,	0,	0,	0,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+1,	1,	1,	1,	0,	0,	0,	0,	
+
+[iteration = 0]
+[processes]
+t1,	t2,	t3,	t4,	
+0,	0,	1,	1,	
+0,	0,	1,	2,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+1,	1,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 1]
+[processes]
+t1,	t2,	t3,	t4,	
+0,	0,	1,	1,	
+0,	0,	0,	1,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+1,	1,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 1]
+[processes]
+t1,	t2,	t3,	t4,	
+0,	0,	0,	1,	
+0,	0,	0,	1,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+1,	1,	0,	0,	0,	0,	2,	0,	
+
+[iteration = 2]
+[processes]
+t1,	t2,	t3,	t4,	
+0,	0,	0,	1,	
+0,	0,	0,	0,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+1,	1,	0,	0,	0,	0,	2,	0,	
+
+[iteration = 2]
+[processes]
+t1,	t2,	t3,	t4,	
+1,	0,	0,	0,	
+3,	0,	0,	0,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+0,	1,	0,	0,	0,	0,	2,	3,	
+
+[iteration = 3]
+[processes]
+t1,	t2,	t3,	t4,	
+1,	0,	0,	0,	
+2,	0,	0,	0,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+0,	1,	0,	0,	0,	0,	2,	3,	
+
+[iteration = 3]
+[processes]
+t1,	t2,	t3,	t4,	
+1,	1,	0,	0,	
+2,	4,	0,	0,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+0,	0,	0,	0,	0,	0,	2,	3,	
+
+[iteration = 4]
+[processes]
+t1,	t2,	t3,	t4,	
+1,	1,	0,	0,	
+1,	3,	0,	0,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+0,	0,	0,	0,	0,	0,	2,	3,	
+
+[iteration = 4]
+[processes]
+t1,	t2,	t3,	t4,	
+1,	1,	0,	0,	
+1,	3,	0,	0,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+0,	0,	0,	0,	0,	0,	2,	3,	
+
+[iteration = 5]
+[processes]
+t1,	t2,	t3,	t4,	
+1,	1,	0,	0,	
+0,	2,	0,	0,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+0,	0,	0,	0,	0,	0,	2,	3,	
+
+[iteration = 5]
+[processes]
+t1,	t2,	t3,	t4,	
+0,	1,	0,	0,	
+0,	2,	0,	0,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+0,	0,	0,	0,	1,	0,	2,	3,	
+
+[iteration = 6]
+[processes]
+t1,	t2,	t3,	t4,	
+0,	1,	0,	0,	
+0,	1,	0,	0,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+0,	0,	0,	0,	1,	0,	2,	3,	
+
+[iteration = 6]
+[processes]
+t1,	t2,	t3,	t4,	
+0,	1,	0,	0,	
+0,	1,	0,	0,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+0,	0,	0,	0,	1,	0,	2,	3,	
+
+[iteration = 7]
+[processes]
+t1,	t2,	t3,	t4,	
+0,	1,	0,	0,	
+0,	0,	0,	0,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+0,	0,	0,	0,	1,	0,	2,	3,	
+
+[iteration = 7]
+[processes]
+t1,	t2,	t3,	t4,	
+0,	0,	0,	0,	
+0,	0,	0,	0,	
+[states]
+p1,	p2,	p3,	p4,	p5,	p6,	p7,	p8,	
+0,	0,	0,	0,	1,	1,	2,	3,	

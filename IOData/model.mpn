@@ -1,0 +1,48 @@
+MPNT02d
+Модель из лекций Туруты (лекция в файле)
+0
+50
+1
+; -----------------------------------------------------------------------------
+; Љ®¬¬Ґ­в аЁЁ ¤®ЇгбЄ овбп в®«мЄ® Ї®б«Ґ ЇпвЁ ўҐае­Ёе бва®Є (DOS)
+; Комментарии допускаются только после пяти верхних строк (WIN)
+; -----------------------------------------------------------------------------
+PLACE,P1,1,
+PLACE,P2,0,
+PLACE,P3,0,
+PLACE,P4,0,
+PLACE,P5,1,
+PLACE,P6,0,
+PLACE,P7,1,
+PLACE,P8,0,
+PLACE,P9,0,,
+TRANSITION,T1,3,150,
+TRANSITION,T2,3,150,
+TRANSITION,T3,1,150,
+TRANSITION,T4,3,150,
+TRANSITION,T5,4,150,
+TRANSITION,T6,2,150,
+CONNECTION,0,1,P8,T1,
+CONNECTION,0,1,P3,T1,
+CONNECTION,0,1,T1,P9,
+CONNECTION,0,1,T1,P1,
+CONNECTION,0,1,P9,T5,
+CONNECTION,0,1,T5,P7,
+CONNECTION,0,1,P7,T2,
+CONNECTION,0,1,T2,P8,
+CONNECTION,0,1,P1,T3,
+CONNECTION,0,1,T3,P6,
+CONNECTION,0,1,P6,T2,
+CONNECTION,0,1,P5,T3,
+CONNECTION,0,1,T3,P2,
+CONNECTION,0,1,P2,T6,
+CONNECTION,0,1,T6,P3,
+CONNECTION,0,1,T2,P4,
+CONNECTION,0,1,P4,T4,
+CONNECTION,0,1,T4,P5,
+; -----------------------------------------------------------------------------
+; Ќ®ў®Ґ Ї®«Ґ: Џа®жҐббл
+; Новое поле: Процессы
+; -----------------------------------------------------------------------------
+;PROCESS,super1,P1,P5,P7,T2,T3,
+;PROCESS,super1,P1,P2,P3,P4,P5,P6,P7,P8,P9,T1,T2,T3,T4,T5,T6,

@@ -1,0 +1,22 @@
+MPNT02d
+®аЁЈЁ­ « Ўл« ў д ©«Ґ: !example.ppi. ‘ҐвЄ , зв® ¤ « ­ ¬ ’гагв  ….Ќ. ­  «ҐЄжЁЁ (ў Є®­бЇҐЄвҐ)
+0
+15
+1
+PLACE,p1,1,
+PLACE,p2,0,
+PLACE,p3,0,
+PLACE,p4,1,
+TRANSITION,t1,5,30,
+TRANSITION,t2,4,70,
+TRANSITION,t3,0,100,
+CONNECTION,0,1,p1,t1,
+CONNECTION,0,1,t1,p2,
+CONNECTION,0,1,t1,p3,
+CONNECTION,0,1,p2,t2,
+CONNECTION,0,1,p3,t2,
+CONNECTION,0,1,t2,p4,
+CONNECTION,0,1,p4,t3,
+CONNECTION,0,1,t3,p2,
+PM,pm1,0,0,0,t1,t2,
+PM,pm5,0,0,0,t3,

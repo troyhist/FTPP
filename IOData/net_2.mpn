@@ -1,0 +1,95 @@
+MPNT02d
+Сеть из 3х процессов A,B,C типа PW2. Сами процессы - ganz scheise (19.05.2002)
+0
+50
+1
+; -----------------------------------------------------------------------------
+; Starting system
+; -----------------------------------------------------------------------------
+PLACE,Pst,1,
+TRANSITION,Tst,1,100,
+CONNECTION,0,1,Pst,Tst,
+CONNECTION,0,1,Tst,A.Pst1,
+CONNECTION,0,1,Tst,B.Pst1,
+CONNECTION,0,1,Tst,C.Pst1,
+; -----------------------------------------------------------------------------
+; Processes interconnections
+; -----------------------------------------------------------------------------
+CONNECTION,0,1,A.Tout,C.Pmbx,
+CONNECTION,0,1,B.Tout,C.Pmbx,
+CONNECTION,0,1,C.Tout,A.Pmbx,
+CONNECTION,0,1,C.Tout,B.Pmbx,
+; -----------------------------------------------------------------------------
+; Processes list
+; -----------------------------------------------------------------------------
+PROCESS,superA,Tst,A.Pst1,A.Pmbx,A.Pr,A.Pc,A.T1,A.T2,A.T3,A.Tout,
+PROCESS,superB,Tst,B.Pst1,B.Pmbx,B.Pr,B.Pc,B.T1,B.T2,B.T3,B.Tout,
+PROCESS,superC,Tst,C.Pst1,C.Pmbx,C.Pr,C.Pc,C.T1,C.T2,C.T3,C.Tout,
+; -----------------------------------------------------------------------------
+; Process A
+; -----------------------------------------------------------------------------
+PLACE,A.Pst1,0,
+PLACE,A.Pmbx,0,
+PLACE,A.Pr,0,
+PLACE,A.Pc,0,
+TRANSITION,A.T1,1,100,
+TRANSITION,A.T2,1,70,
+TRANSITION,A.T3,1,100,
+TRANSITION,A.Tout,2,90,
+CONNECTION,0,1,A.Pmbx,A.Tout,
+CONNECTION,0,1,A.Pst1,A.T1,
+CONNECTION,0,1,A.T1,A.Pr,
+CONNECTION,0,1,A.Pr,A.T2,
+CONNECTION,0,1,A.T2,A.Pc,
+CONNECTION,0,1,A.Pc,A.T3,
+CONNECTION,0,1,A.Pr,A.Tout,
+CONNECTION,0,1,A.Tout,A.Pc,
+CONNECTION,0,1,A.T3,A.Pst1,
+; -----------------------------------------------------------------------------
+; Process B
+; -----------------------------------------------------------------------------
+PLACE,B.Pst1,0,
+PLACE,B.Pmbx,0,
+PLACE,B.Pr,0,
+PLACE,B.Pc,0,
+TRANSITION,B.T1,1,100,
+TRANSITION,B.T2,1,70,
+TRANSITION,B.T3,1,100,
+TRANSITION,B.Tout,2,90,
+CONNECTION,0,1,B.Pmbx,B.Tout,
+CONNECTION,0,1,B.Pst1,B.T1,
+CONNECTION,0,1,B.T1,B.Pr,
+CONNECTION,0,1,B.Pr,B.T2,
+CONNECTION,0,1,B.T2,B.Pc,
+CONNECTION,0,1,B.Pc,B.T3,
+CONNECTION,0,1,B.Pr,B.Tout,
+CONNECTION,0,1,B.Tout,B.Pc,
+CONNECTION,0,1,B.T3,B.Pst1,
+; -----------------------------------------------------------------------------
+; Process C
+; -----------------------------------------------------------------------------
+PLACE,C.Pst1,0,
+PLACE,C.Pmbx,0,
+PLACE,C.Pr,0,
+PLACE,C.Pc,0,
+TRANSITION,C.T1,1,100,
+TRANSITION,C.T2,1,70,
+TRANSITION,C.T3,1,100,
+TRANSITION,C.Tout,2,90,
+CONNECTION,0,1,C.Pmbx,C.Tout,
+CONNECTION,0,1,C.Pst1,C.T1,
+CONNECTION,0,1,C.T1,C.Pr,
+CONNECTION,0,1,C.Pr,C.T2,
+CONNECTION,0,1,C.T2,C.Pc,
+CONNECTION,0,1,C.Pc,C.T3,
+CONNECTION,0,1,C.Pr,C.Tout,
+CONNECTION,0,1,C.Tout,C.Pc,
+CONNECTION,0,1,C.T3,C.Pst1,
+; -----------------------------------------------------------------------------
+; Processing modules
+; -----------------------------------------------------------------------------
+PM,pmA,0,0,0,Tst,A.T1,A.T2,A.T3,A.Tout,
+PM,pmB,0,0,0,Tst,B.T1,B.T2,B.T3,B.Tout,
+PM,pmC,0,0,0,Tst,C.T1,C.T2,C.T3,C.Tout,
+; -----------------------------------------------------------------------------
+

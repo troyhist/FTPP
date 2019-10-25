@@ -1,0 +1,909 @@
+[loginfo]
+FTPP build #   = 34
+records        = 50
+iterations     = 50 [0...49]
+
+[netinfo]
+places      = 13
+transitions = 10
+connections = 26
+PMs         = 10
+Processes   = 5
+
+[statistics]
+Max p/w PMs    = 5 [always free PMs = 5]
+Min p/w PMs    = 3 [max free PMs    = 7]
+
+[process: PN_MAINPROCESS]
+cycles         = 0 [0 iterations]
+avg cycle time = 0.0 (iterations/cycles)
+DUB markings   = 0
+OVER markings  = 0
+stagnations    = 0
+
+[process: ID=50]
+cycles         = 24 [48 iterations]
+avg cycle time = 2.0 (iterations/cycles)
+DUB markings   = 48
+OVER markings  = 0
+stagnations    = 0
+
+[process: ID=51]
+cycles         = 11 [44 iterations]
+avg cycle time = 4.0 (iterations/cycles)
+DUB markings   = 22
+OVER markings  = 0
+stagnations    = 2
+
+[process: ID=52]
+cycles         = 11 [44 iterations]
+avg cycle time = 4.0 (iterations/cycles)
+DUB markings   = 22
+OVER markings  = 0
+stagnations    = 26
+
+[process: ID=53]
+cycles         = 16 [48 iterations]
+avg cycle time = 3.0 (iterations/cycles)
+DUB markings   = 31
+OVER markings  = 0
+stagnations    = 0
+
+[process: ID=54]
+cycles         = 12 [48 iterations]
+avg cycle time = 4.0 (iterations/cycles)
+DUB markings   = 23
+OVER markings  = 0
+stagnations    = 0
+
+[protocol]
+
+[iteration =0]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+1,	0,	1,	0,	1,	0,	1,	0,	1,	0,	0,	0,	0,	
+-,	-,	-,	-,	-,	-,	-,	-,	-,	-,	-,	-,	-,	
+0,	-,	-,	-,	-,	-,	0,	-,	0,	-,	-,	-,	-,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	
+pm3, ok,	-,	-,	-,	
+pm4, ok,	-,	-,	-,	
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	
+pm9, busy,	T8,	3,	0,	-> new T8
+pm10, ok,	-,	-,	-,	
+
+[iteration =1]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	1,	0,	1,	0,	0,	0,	0,	0,	0,	0,	0,	
+-,	1,	-,	-,	-,	-,	-,	-,	-,	-,	-,	-,	-,	
+-,	0,	-,	-,	-,	-,	-,	-,	-,	-,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, ok,	-,	-,	-,	
+pm4, ok,	-,	-,	-,	
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, busy,	T8,	3,	1,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =2]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	1,	0,	1,	0,	0,	0,	0,	0,	0,	0,	0,	
+1,	-,	-,	-,	-,	-,	-,	1,	-,	-,	1,	1,	-,	
+0,	-,	0,	-,	-,	-,	-,	0,	-,	-,	0,	-,	-,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	0,	-> new T2
+pm4, ok,	-,	-,	-,	
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, busy,	T8,	3,	2,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =3]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	0,	1,	0,	
+-,	1,	-,	-,	-,	-,	1,	-,	-,	1,	-,	-,	-,	
+-,	0,	-,	-,	-,	-,	0,	-,	-,	0,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, busy,	T2,	3,	1,	
+pm4, ok,	-,	-,	-,	
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, ok,	-,	-,	-,	-> fired T8
+pm10, busy,	T9,	1,	0,	-> new T9
+
+[iteration =4]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	0,	1,	0,	
+1,	-,	-,	-,	-,	-,	-,	-,	1,	-,	1,	2,	1,	
+0,	-,	-,	-,	0,	-,	-,	-,	0,	-,	-,	1,	0,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	2,	
+pm4, ok,	-,	-,	-,	
+pm5, busy,	T4,	1,	0,	-> new T4
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, busy,	T8,	3,	0,	-> new T8
+pm10, ok,	-,	-,	-,	-> fired T9
+
+[iteration =5]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	1,	1,	0,	
+-,	1,	-,	1,	-,	1,	-,	1,	-,	-,	-,	-,	-,	
+-,	0,	-,	0,	-,	0,	-,	0,	-,	-,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, ok,	-,	-,	-,	-> fired T2
+pm4, busy,	T3,	1,	0,	-> new T3
+pm5, ok,	-,	-,	-,	-> fired T4
+pm6, busy,	T5,	1,	0,	-> new T5
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, busy,	T8,	3,	1,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =6]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	1,	1,	0,	
+1,	-,	1,	-,	1,	-,	1,	-,	-,	-,	2,	2,	-,	
+0,	-,	0,	-,	-,	-,	0,	-,	-,	-,	1,	-,	-,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	0,	-> new T2
+pm4, ok,	-,	-,	-,	-> fired T3
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	-> fired T5
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, busy,	T8,	3,	2,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =7]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	1,	2,	0,	
+-,	1,	-,	-,	-,	-,	-,	-,	-,	1,	-,	-,	-,	
+-,	0,	-,	-,	-,	-,	-,	-,	-,	0,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, busy,	T2,	3,	1,	
+pm4, ok,	-,	-,	-,	
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, ok,	-,	-,	-,	-> fired T8
+pm10, busy,	T9,	1,	0,	-> new T9
+
+[iteration =8]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	1,	2,	0,	
+1,	-,	-,	-,	-,	-,	-,	1,	1,	-,	2,	3,	1,	
+0,	-,	-,	-,	0,	-,	-,	0,	0,	-,	-,	2,	0,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	2,	
+pm4, ok,	-,	-,	-,	
+pm5, busy,	T4,	1,	0,	-> new T4
+pm6, ok,	-,	-,	-,	
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, busy,	T8,	3,	0,	-> new T8
+pm10, ok,	-,	-,	-,	-> fired T9
+
+[iteration =9]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	2,	2,	0,	
+-,	1,	-,	1,	-,	1,	1,	-,	-,	-,	-,	-,	-,	
+-,	0,	-,	0,	-,	0,	0,	-,	-,	-,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, ok,	-,	-,	-,	-> fired T2
+pm4, busy,	T3,	1,	0,	-> new T3
+pm5, ok,	-,	-,	-,	-> fired T4
+pm6, busy,	T5,	1,	0,	-> new T5
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, busy,	T8,	3,	1,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =10]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	2,	2,	0,	
+1,	-,	1,	-,	1,	-,	-,	-,	-,	-,	3,	3,	-,	
+0,	-,	0,	-,	-,	-,	-,	-,	-,	-,	2,	-,	-,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	0,	-> new T2
+pm4, ok,	-,	-,	-,	-> fired T3
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	-> fired T5
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, busy,	T8,	3,	2,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =11]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	2,	3,	0,	
+-,	1,	-,	-,	-,	-,	-,	1,	-,	1,	-,	-,	-,	
+-,	0,	-,	-,	-,	-,	-,	0,	-,	0,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, busy,	T2,	3,	1,	
+pm4, ok,	-,	-,	-,	
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, ok,	-,	-,	-,	-> fired T8
+pm10, busy,	T9,	1,	0,	-> new T9
+
+[iteration =12]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	2,	3,	0,	
+1,	-,	-,	-,	-,	-,	1,	-,	1,	-,	3,	4,	1,	
+0,	-,	-,	-,	0,	-,	0,	-,	0,	-,	-,	3,	0,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	2,	
+pm4, ok,	-,	-,	-,	
+pm5, busy,	T4,	1,	0,	-> new T4
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, busy,	T8,	3,	0,	-> new T8
+pm10, ok,	-,	-,	-,	-> fired T9
+
+[iteration =13]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	3,	3,	0,	
+-,	1,	-,	1,	-,	1,	-,	-,	-,	-,	-,	-,	-,	
+-,	0,	-,	0,	-,	0,	-,	-,	-,	-,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, ok,	-,	-,	-,	-> fired T2
+pm4, busy,	T3,	1,	0,	-> new T3
+pm5, ok,	-,	-,	-,	-> fired T4
+pm6, busy,	T5,	1,	0,	-> new T5
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, busy,	T8,	3,	1,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =14]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	3,	3,	0,	
+1,	-,	1,	-,	1,	-,	-,	1,	-,	-,	4,	4,	-,	
+0,	-,	0,	-,	-,	-,	-,	0,	-,	-,	3,	-,	-,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	0,	-> new T2
+pm4, ok,	-,	-,	-,	-> fired T3
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	-> fired T5
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, busy,	T8,	3,	2,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =15]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	3,	4,	0,	
+-,	1,	-,	-,	-,	-,	1,	-,	-,	1,	-,	-,	-,	
+-,	0,	-,	-,	-,	-,	0,	-,	-,	0,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, busy,	T2,	3,	1,	
+pm4, ok,	-,	-,	-,	
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, ok,	-,	-,	-,	-> fired T8
+pm10, busy,	T9,	1,	0,	-> new T9
+
+[iteration =16]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	3,	4,	0,	
+1,	-,	-,	-,	-,	-,	-,	-,	1,	-,	4,	5,	1,	
+0,	-,	-,	-,	0,	-,	-,	-,	0,	-,	-,	4,	0,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	2,	
+pm4, ok,	-,	-,	-,	
+pm5, busy,	T4,	1,	0,	-> new T4
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, busy,	T8,	3,	0,	-> new T8
+pm10, ok,	-,	-,	-,	-> fired T9
+
+[iteration =17]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	4,	4,	0,	
+-,	1,	-,	1,	-,	1,	-,	1,	-,	-,	-,	-,	-,	
+-,	0,	-,	0,	-,	0,	-,	0,	-,	-,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, ok,	-,	-,	-,	-> fired T2
+pm4, busy,	T3,	1,	0,	-> new T3
+pm5, ok,	-,	-,	-,	-> fired T4
+pm6, busy,	T5,	1,	0,	-> new T5
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, busy,	T8,	3,	1,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =18]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	4,	4,	0,	
+1,	-,	1,	-,	1,	-,	1,	-,	-,	-,	5,	5,	-,	
+0,	-,	0,	-,	-,	-,	0,	-,	-,	-,	4,	-,	-,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	0,	-> new T2
+pm4, ok,	-,	-,	-,	-> fired T3
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	-> fired T5
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, busy,	T8,	3,	2,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =19]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	4,	5,	0,	
+-,	1,	-,	-,	-,	-,	-,	-,	-,	1,	-,	-,	-,	
+-,	0,	-,	-,	-,	-,	-,	-,	-,	0,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, busy,	T2,	3,	1,	
+pm4, ok,	-,	-,	-,	
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, ok,	-,	-,	-,	-> fired T8
+pm10, busy,	T9,	1,	0,	-> new T9
+
+[iteration =20]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	4,	5,	0,	
+1,	-,	-,	-,	-,	-,	-,	1,	1,	-,	5,	6,	1,	
+0,	-,	-,	-,	0,	-,	-,	0,	0,	-,	-,	5,	0,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	2,	
+pm4, ok,	-,	-,	-,	
+pm5, busy,	T4,	1,	0,	-> new T4
+pm6, ok,	-,	-,	-,	
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, busy,	T8,	3,	0,	-> new T8
+pm10, ok,	-,	-,	-,	-> fired T9
+
+[iteration =21]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	5,	5,	0,	
+-,	1,	-,	1,	-,	1,	1,	-,	-,	-,	-,	-,	-,	
+-,	0,	-,	0,	-,	0,	0,	-,	-,	-,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, ok,	-,	-,	-,	-> fired T2
+pm4, busy,	T3,	1,	0,	-> new T3
+pm5, ok,	-,	-,	-,	-> fired T4
+pm6, busy,	T5,	1,	0,	-> new T5
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, busy,	T8,	3,	1,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =22]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	5,	5,	0,	
+1,	-,	1,	-,	1,	-,	-,	-,	-,	-,	6,	6,	-,	
+0,	-,	0,	-,	-,	-,	-,	-,	-,	-,	5,	-,	-,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	0,	-> new T2
+pm4, ok,	-,	-,	-,	-> fired T3
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	-> fired T5
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, busy,	T8,	3,	2,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =23]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	5,	6,	0,	
+-,	1,	-,	-,	-,	-,	-,	1,	-,	1,	-,	-,	-,	
+-,	0,	-,	-,	-,	-,	-,	0,	-,	0,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, busy,	T2,	3,	1,	
+pm4, ok,	-,	-,	-,	
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, ok,	-,	-,	-,	-> fired T8
+pm10, busy,	T9,	1,	0,	-> new T9
+
+[iteration =24]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	5,	6,	0,	
+1,	-,	-,	-,	-,	-,	1,	-,	1,	-,	6,	7,	1,	
+0,	-,	-,	-,	0,	-,	0,	-,	0,	-,	-,	6,	0,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	2,	
+pm4, ok,	-,	-,	-,	
+pm5, busy,	T4,	1,	0,	-> new T4
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, busy,	T8,	3,	0,	-> new T8
+pm10, ok,	-,	-,	-,	-> fired T9
+
+[iteration =25]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	6,	6,	0,	
+-,	1,	-,	1,	-,	1,	-,	-,	-,	-,	-,	-,	-,	
+-,	0,	-,	0,	-,	0,	-,	-,	-,	-,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, ok,	-,	-,	-,	-> fired T2
+pm4, busy,	T3,	1,	0,	-> new T3
+pm5, ok,	-,	-,	-,	-> fired T4
+pm6, busy,	T5,	1,	0,	-> new T5
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, busy,	T8,	3,	1,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =26]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	6,	6,	0,	
+1,	-,	1,	-,	1,	-,	-,	1,	-,	-,	7,	7,	-,	
+0,	-,	0,	-,	-,	-,	-,	0,	-,	-,	6,	-,	-,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	0,	-> new T2
+pm4, ok,	-,	-,	-,	-> fired T3
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	-> fired T5
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, busy,	T8,	3,	2,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =27]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	6,	7,	0,	
+-,	1,	-,	-,	-,	-,	1,	-,	-,	1,	-,	-,	-,	
+-,	0,	-,	-,	-,	-,	0,	-,	-,	0,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, busy,	T2,	3,	1,	
+pm4, ok,	-,	-,	-,	
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, ok,	-,	-,	-,	-> fired T8
+pm10, busy,	T9,	1,	0,	-> new T9
+
+[iteration =28]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	6,	7,	0,	
+1,	-,	-,	-,	-,	-,	-,	-,	1,	-,	7,	8,	1,	
+0,	-,	-,	-,	0,	-,	-,	-,	0,	-,	-,	7,	0,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	2,	
+pm4, ok,	-,	-,	-,	
+pm5, busy,	T4,	1,	0,	-> new T4
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, busy,	T8,	3,	0,	-> new T8
+pm10, ok,	-,	-,	-,	-> fired T9
+
+[iteration =29]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	7,	7,	0,	
+-,	1,	-,	1,	-,	1,	-,	1,	-,	-,	-,	-,	-,	
+-,	0,	-,	0,	-,	0,	-,	0,	-,	-,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, ok,	-,	-,	-,	-> fired T2
+pm4, busy,	T3,	1,	0,	-> new T3
+pm5, ok,	-,	-,	-,	-> fired T4
+pm6, busy,	T5,	1,	0,	-> new T5
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, busy,	T8,	3,	1,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =30]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	7,	7,	0,	
+1,	-,	1,	-,	1,	-,	1,	-,	-,	-,	8,	8,	-,	
+0,	-,	0,	-,	-,	-,	0,	-,	-,	-,	7,	-,	-,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	0,	-> new T2
+pm4, ok,	-,	-,	-,	-> fired T3
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	-> fired T5
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, busy,	T8,	3,	2,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =31]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	7,	8,	0,	
+-,	1,	-,	-,	-,	-,	-,	-,	-,	1,	-,	-,	-,	
+-,	0,	-,	-,	-,	-,	-,	-,	-,	0,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, busy,	T2,	3,	1,	
+pm4, ok,	-,	-,	-,	
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, ok,	-,	-,	-,	-> fired T8
+pm10, busy,	T9,	1,	0,	-> new T9
+
+[iteration =32]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	7,	8,	0,	
+1,	-,	-,	-,	-,	-,	-,	1,	1,	-,	8,	9,	1,	
+0,	-,	-,	-,	0,	-,	-,	0,	0,	-,	-,	8,	0,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	2,	
+pm4, ok,	-,	-,	-,	
+pm5, busy,	T4,	1,	0,	-> new T4
+pm6, ok,	-,	-,	-,	
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, busy,	T8,	3,	0,	-> new T8
+pm10, ok,	-,	-,	-,	-> fired T9
+
+[iteration =33]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	8,	8,	0,	
+-,	1,	-,	1,	-,	1,	1,	-,	-,	-,	-,	-,	-,	
+-,	0,	-,	0,	-,	0,	0,	-,	-,	-,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, ok,	-,	-,	-,	-> fired T2
+pm4, busy,	T3,	1,	0,	-> new T3
+pm5, ok,	-,	-,	-,	-> fired T4
+pm6, busy,	T5,	1,	0,	-> new T5
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, busy,	T8,	3,	1,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =34]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	8,	8,	0,	
+1,	-,	1,	-,	1,	-,	-,	-,	-,	-,	9,	9,	-,	
+0,	-,	0,	-,	-,	-,	-,	-,	-,	-,	8,	-,	-,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	0,	-> new T2
+pm4, ok,	-,	-,	-,	-> fired T3
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	-> fired T5
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, busy,	T8,	3,	2,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =35]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	8,	9,	0,	
+-,	1,	-,	-,	-,	-,	-,	1,	-,	1,	-,	-,	-,	
+-,	0,	-,	-,	-,	-,	-,	0,	-,	0,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, busy,	T2,	3,	1,	
+pm4, ok,	-,	-,	-,	
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, ok,	-,	-,	-,	-> fired T8
+pm10, busy,	T9,	1,	0,	-> new T9
+
+[iteration =36]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	8,	9,	0,	
+1,	-,	-,	-,	-,	-,	1,	-,	1,	-,	9,	10,	1,	
+0,	-,	-,	-,	0,	-,	0,	-,	0,	-,	-,	9,	0,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	2,	
+pm4, ok,	-,	-,	-,	
+pm5, busy,	T4,	1,	0,	-> new T4
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, busy,	T8,	3,	0,	-> new T8
+pm10, ok,	-,	-,	-,	-> fired T9
+
+[iteration =37]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	9,	9,	0,	
+-,	1,	-,	1,	-,	1,	-,	-,	-,	-,	-,	-,	-,	
+-,	0,	-,	0,	-,	0,	-,	-,	-,	-,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, ok,	-,	-,	-,	-> fired T2
+pm4, busy,	T3,	1,	0,	-> new T3
+pm5, ok,	-,	-,	-,	-> fired T4
+pm6, busy,	T5,	1,	0,	-> new T5
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, busy,	T8,	3,	1,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =38]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	9,	9,	0,	
+1,	-,	1,	-,	1,	-,	-,	1,	-,	-,	10,	10,	-,	
+0,	-,	0,	-,	-,	-,	-,	0,	-,	-,	9,	-,	-,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	0,	-> new T2
+pm4, ok,	-,	-,	-,	-> fired T3
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	-> fired T5
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, busy,	T8,	3,	2,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =39]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	9,	10,	0,	
+-,	1,	-,	-,	-,	-,	1,	-,	-,	1,	-,	-,	-,	
+-,	0,	-,	-,	-,	-,	0,	-,	-,	0,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, busy,	T2,	3,	1,	
+pm4, ok,	-,	-,	-,	
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, ok,	-,	-,	-,	-> fired T8
+pm10, busy,	T9,	1,	0,	-> new T9
+
+[iteration =40]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	9,	10,	0,	
+1,	-,	-,	-,	-,	-,	-,	-,	1,	-,	10,	11,	1,	
+0,	-,	-,	-,	0,	-,	-,	-,	0,	-,	-,	10,	0,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	2,	
+pm4, ok,	-,	-,	-,	
+pm5, busy,	T4,	1,	0,	-> new T4
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, busy,	T8,	3,	0,	-> new T8
+pm10, ok,	-,	-,	-,	-> fired T9
+
+[iteration =41]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	10,	10,	0,	
+-,	1,	-,	1,	-,	1,	-,	1,	-,	-,	-,	-,	-,	
+-,	0,	-,	0,	-,	0,	-,	0,	-,	-,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, ok,	-,	-,	-,	-> fired T2
+pm4, busy,	T3,	1,	0,	-> new T3
+pm5, ok,	-,	-,	-,	-> fired T4
+pm6, busy,	T5,	1,	0,	-> new T5
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, busy,	T8,	3,	1,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =42]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	10,	10,	0,	
+1,	-,	1,	-,	1,	-,	1,	-,	-,	-,	11,	11,	-,	
+0,	-,	0,	-,	-,	-,	0,	-,	-,	-,	10,	-,	-,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	0,	-> new T2
+pm4, ok,	-,	-,	-,	-> fired T3
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	-> fired T5
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, busy,	T8,	3,	2,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =43]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	10,	11,	0,	
+-,	1,	-,	-,	-,	-,	-,	-,	-,	1,	-,	-,	-,	
+-,	0,	-,	-,	-,	-,	-,	-,	-,	0,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, busy,	T2,	3,	1,	
+pm4, ok,	-,	-,	-,	
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, ok,	-,	-,	-,	-> fired T8
+pm10, busy,	T9,	1,	0,	-> new T9
+
+[iteration =44]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	10,	11,	0,	
+1,	-,	-,	-,	-,	-,	-,	1,	1,	-,	11,	12,	1,	
+0,	-,	-,	-,	0,	-,	-,	0,	0,	-,	-,	11,	0,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	2,	
+pm4, ok,	-,	-,	-,	
+pm5, busy,	T4,	1,	0,	-> new T4
+pm6, ok,	-,	-,	-,	
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, busy,	T8,	3,	0,	-> new T8
+pm10, ok,	-,	-,	-,	-> fired T9
+
+[iteration =45]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	11,	11,	0,	
+-,	1,	-,	1,	-,	1,	1,	-,	-,	-,	-,	-,	-,	
+-,	0,	-,	0,	-,	0,	0,	-,	-,	-,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, ok,	-,	-,	-,	-> fired T2
+pm4, busy,	T3,	1,	0,	-> new T3
+pm5, ok,	-,	-,	-,	-> fired T4
+pm6, busy,	T5,	1,	0,	-> new T5
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, busy,	T8,	3,	1,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =46]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	11,	11,	0,	
+1,	-,	1,	-,	1,	-,	-,	-,	-,	-,	12,	12,	-,	
+0,	-,	0,	-,	-,	-,	-,	-,	-,	-,	11,	-,	-,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	0,	-> new T2
+pm4, ok,	-,	-,	-,	-> fired T3
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	-> fired T5
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, busy,	T8,	3,	2,	
+pm10, ok,	-,	-,	-,	
+
+[iteration =47]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	11,	12,	0,	
+-,	1,	-,	-,	-,	-,	-,	1,	-,	1,	-,	-,	-,	
+-,	0,	-,	-,	-,	-,	-,	0,	-,	0,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, busy,	T2,	3,	1,	
+pm4, ok,	-,	-,	-,	
+pm5, ok,	-,	-,	-,	
+pm6, ok,	-,	-,	-,	
+pm7, ok,	-,	-,	-,	-> fired T6
+pm8, busy,	T7,	1,	0,	-> new T7
+pm9, ok,	-,	-,	-,	-> fired T8
+pm10, busy,	T9,	1,	0,	-> new T9
+
+[iteration =48]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	0,	11,	12,	0,	
+1,	-,	-,	-,	-,	-,	1,	-,	1,	-,	12,	13,	1,	
+0,	-,	-,	-,	0,	-,	0,	-,	0,	-,	-,	12,	0,	
+
+pm1, busy,	T0,	1,	0,	-> new T0
+pm2, ok,	-,	-,	-,	-> fired T1
+pm3, busy,	T2,	3,	2,	
+pm4, ok,	-,	-,	-,	
+pm5, busy,	T4,	1,	0,	-> new T4
+pm6, ok,	-,	-,	-,	
+pm7, busy,	T6,	2,	0,	-> new T6
+pm8, ok,	-,	-,	-,	-> fired T7
+pm9, busy,	T8,	3,	0,	-> new T8
+pm10, ok,	-,	-,	-,	-> fired T9
+
+[iteration =49]
+P0,	P1,	P2,	P3,	P4,	P5,	P6,	P7,	P8,	P9,	Pmbx1,	Pmbx2,	Pmbx3,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	12,	12,	0,	
+-,	1,	-,	1,	-,	1,	-,	-,	-,	-,	-,	-,	-,	
+-,	0,	-,	0,	-,	0,	-,	-,	-,	-,	-,	-,	-,	
+
+pm1, ok,	-,	-,	-,	-> fired T0
+pm2, busy,	T1,	1,	0,	-> new T1
+pm3, ok,	-,	-,	-,	-> fired T2
+pm4, busy,	T3,	1,	0,	-> new T3
+pm5, ok,	-,	-,	-,	-> fired T4
+pm6, busy,	T5,	1,	0,	-> new T5
+pm7, busy,	T6,	2,	1,	
+pm8, ok,	-,	-,	-,	
+pm9, busy,	T8,	3,	1,	
+pm10, ok,	-,	-,	-,	

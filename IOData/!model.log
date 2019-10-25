@@ -1,0 +1,1355 @@
+[netinfo]
+places      = 9
+transitions = 6
+iterations  = 76
+[protocol]
+
+[iteration = 0]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	1,	1,	0,	1,	0,	0,	
+
+[iteration = 0]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	1,	0,	0,	
+0,	0,	0,	1,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	
+
+[iteration = 1]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	1,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	1,	0,	0,	0,	0,	
+
+[iteration = 1]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	1,	1,	0,	1,	0,	
+
+[iteration = 2]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	1,	1,	0,	1,	0,	
+
+[iteration = 2]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	1,	0,	
+0,	0,	3,	0,	2,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 3]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	1,	0,	
+0,	0,	2,	0,	1,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 3]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	1,	0,	
+0,	0,	2,	0,	1,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 4]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	1,	0,	
+0,	0,	1,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 4]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	1,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 5]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 5]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+1,	1,	0,	0,	0,	0,	0,	0,	1,	
+
+[iteration = 6]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+1,	1,	0,	0,	0,	0,	0,	0,	1,	
+
+[iteration = 6]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+3,	0,	0,	0,	0,	3,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 7]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+2,	0,	0,	0,	0,	2,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 7]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+2,	0,	0,	0,	0,	2,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 8]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+1,	0,	0,	0,	0,	1,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 8]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+1,	0,	0,	0,	0,	1,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 9]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 9]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	1,	1,	0,	0,	1,	0,	0,	
+
+[iteration = 10]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	1,	1,	0,	0,	1,	0,	0,	
+
+[iteration = 10]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	1,	0,	0,	
+0,	4,	0,	1,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 11]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	1,	0,	0,	
+0,	3,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 11]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	0,	0,	
+0,	3,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	1,	0,	
+
+[iteration = 12]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	0,	0,	
+0,	2,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	1,	0,	
+
+[iteration = 12]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	2,	0,	0,	2,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 13]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	1,	0,	0,	1,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 13]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	1,	0,	0,	1,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 14]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 14]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	1,	1,	0,	0,	0,	
+
+[iteration = 15]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	1,	1,	0,	0,	0,	
+
+[iteration = 15]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	3,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 16]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	2,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 16]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	2,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 17]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	1,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 17]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	1,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 18]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 18]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+1,	1,	0,	0,	0,	0,	0,	0,	1,	
+
+[iteration = 19]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+1,	1,	0,	0,	0,	0,	0,	0,	1,	
+
+[iteration = 19]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+3,	0,	0,	0,	0,	3,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 20]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+2,	0,	0,	0,	0,	2,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 20]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+2,	0,	0,	0,	0,	2,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 21]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+1,	0,	0,	0,	0,	1,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 21]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+1,	0,	0,	0,	0,	1,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 22]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 22]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	1,	1,	0,	0,	1,	0,	0,	
+
+[iteration = 23]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	1,	1,	0,	0,	1,	0,	0,	
+
+[iteration = 23]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	1,	0,	0,	
+0,	4,	0,	1,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 24]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	1,	0,	0,	
+0,	3,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 24]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	0,	0,	
+0,	3,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	1,	0,	
+
+[iteration = 25]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	0,	0,	
+0,	2,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	1,	0,	
+
+[iteration = 25]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	2,	0,	0,	2,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 26]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	1,	0,	0,	1,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 26]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	1,	0,	0,	1,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 27]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 27]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	1,	1,	0,	0,	0,	
+
+[iteration = 28]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	1,	1,	0,	0,	0,	
+
+[iteration = 28]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	3,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 29]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	2,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 29]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	2,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 30]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	1,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 30]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	1,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 31]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 31]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+1,	1,	0,	0,	0,	0,	0,	0,	1,	
+
+[iteration = 32]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+1,	1,	0,	0,	0,	0,	0,	0,	1,	
+
+[iteration = 32]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+3,	0,	0,	0,	0,	3,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 33]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+2,	0,	0,	0,	0,	2,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 33]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+2,	0,	0,	0,	0,	2,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 34]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+1,	0,	0,	0,	0,	1,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 34]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+1,	0,	0,	0,	0,	1,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 35]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 35]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	1,	1,	0,	0,	1,	0,	0,	
+
+[iteration = 36]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	1,	1,	0,	0,	1,	0,	0,	
+
+[iteration = 36]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	1,	0,	0,	
+0,	4,	0,	1,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 37]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	1,	0,	0,	
+0,	3,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 37]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	0,	0,	
+0,	3,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	1,	0,	
+
+[iteration = 38]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	0,	0,	
+0,	2,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	1,	0,	
+
+[iteration = 38]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	2,	0,	0,	2,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 39]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	1,	0,	0,	1,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 39]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	1,	0,	0,	1,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 40]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 40]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	1,	1,	0,	0,	0,	
+
+[iteration = 41]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	1,	1,	0,	0,	0,	
+
+[iteration = 41]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	3,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 42]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	2,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 42]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	2,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 43]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	1,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 43]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	1,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 44]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 44]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+1,	1,	0,	0,	0,	0,	0,	0,	1,	
+
+[iteration = 45]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+1,	1,	0,	0,	0,	0,	0,	0,	1,	
+
+[iteration = 45]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+3,	0,	0,	0,	0,	3,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 46]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+2,	0,	0,	0,	0,	2,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 46]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+2,	0,	0,	0,	0,	2,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 47]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+1,	0,	0,	0,	0,	1,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 47]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+1,	0,	0,	0,	0,	1,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 48]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 48]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	1,	1,	0,	0,	1,	0,	0,	
+
+[iteration = 49]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	1,	1,	0,	0,	1,	0,	0,	
+
+[iteration = 49]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	1,	0,	0,	
+0,	4,	0,	1,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 50]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	1,	0,	0,	
+0,	3,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 50]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	0,	0,	
+0,	3,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	1,	0,	
+
+[iteration = 51]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	0,	0,	
+0,	2,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	1,	0,	
+
+[iteration = 51]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	2,	0,	0,	2,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 52]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	1,	0,	0,	1,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 52]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	1,	0,	0,	1,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 53]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 53]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	1,	1,	0,	0,	0,	
+
+[iteration = 54]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	1,	1,	0,	0,	0,	
+
+[iteration = 54]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	3,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 55]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	2,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 55]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	2,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 56]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	1,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 56]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	1,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 57]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 57]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+1,	1,	0,	0,	0,	0,	0,	0,	1,	
+
+[iteration = 58]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+1,	1,	0,	0,	0,	0,	0,	0,	1,	
+
+[iteration = 58]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+3,	0,	0,	0,	0,	3,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 59]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+2,	0,	0,	0,	0,	2,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 59]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+2,	0,	0,	0,	0,	2,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 60]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+1,	0,	0,	0,	0,	1,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 60]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+1,	0,	0,	0,	0,	1,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 61]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 61]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	1,	1,	0,	0,	1,	0,	0,	
+
+[iteration = 62]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	1,	1,	0,	0,	1,	0,	0,	
+
+[iteration = 62]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	1,	0,	0,	
+0,	4,	0,	1,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 63]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	1,	0,	0,	
+0,	3,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 63]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	0,	0,	
+0,	3,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	1,	0,	
+
+[iteration = 64]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	0,	0,	
+0,	2,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	1,	0,	
+
+[iteration = 64]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	2,	0,	0,	2,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 65]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	1,	0,	0,	1,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 65]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	1,	0,	0,	1,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 66]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	1,	0,	0,	1,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	1,	0,	0,	0,	
+
+[iteration = 66]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	1,	1,	0,	0,	0,	
+
+[iteration = 67]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	1,	1,	0,	0,	0,	
+
+[iteration = 67]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	3,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 68]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	2,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 68]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	2,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 69]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	1,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 69]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	1,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 70]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	1,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	1,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 70]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+1,	1,	0,	0,	0,	0,	0,	0,	1,	
+
+[iteration = 71]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+1,	1,	0,	0,	0,	0,	0,	0,	1,	
+
+[iteration = 71]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+3,	0,	0,	0,	0,	3,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 72]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+2,	0,	0,	0,	0,	2,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 72]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+2,	0,	0,	0,	0,	2,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 73]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+1,	0,	0,	0,	0,	1,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 73]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+1,	0,	0,	0,	0,	1,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 74]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+1,	0,	0,	0,	0,	1,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	0,	0,	0,	0,	0,	0,	0,	
+
+[iteration = 74]
+[processes]
+T1,	T5,	T2,	T3,	T6,	T4,	
+0,	0,	0,	0,	0,	0,	
+0,	0,	0,	0,	0,	0,	
+[states]
+P8,	P3,	P9,	P1,	P7,	P6,	P5,	P2,	P4,	
+0,	0,	1,	1,	0,	0,	1,	0,	0,	
